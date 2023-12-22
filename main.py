@@ -12,7 +12,7 @@ screen.addshape("blank_states_img.gif")
 count=0
 turtle.shape("blank_states_img.gif")
 guessed_states=[]
-states_left=data.state.to_list()
+
 while count<50:
     answer_state=screen.textinput(f"{count}/50 states named","What's the next state?").title()
     if answer_state=="Exit":
@@ -26,9 +26,7 @@ while count<50:
         guessed_states.append(answer_state)
         count+=1
     
-for i in guessed_states:
-    states_left.remove(i)
-
+states_left=[i for i in data.state.to_list() if i not in guessed_states]
 newdat=pd.DataFrame(states_left)
 newdat.to_csv("States_left.csv")
 
