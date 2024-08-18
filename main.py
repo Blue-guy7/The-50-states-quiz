@@ -2,11 +2,13 @@ import turtle
 import pandas as pd
 from namer import State_name
 
-data=pd.read_csv("50_states.csv")
-print()
+
+country_images=["blank_states_img.gif"]
 sname=State_name()
 screen=turtle.Screen()
-screen.title("US Statesgame")
+
+data=pd.read_csv("50_states.csv")
+screen.title("United States game")
 screen.listen()
 screen.addshape("blank_states_img.gif")
 count=0
