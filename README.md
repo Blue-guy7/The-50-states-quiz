@@ -13,5 +13,5 @@
 ### If you want to provide any feedback about the game just post in the issues tab. All contributors are welcome provided they do not break the game. :p
 
 
-## Regards
+### Regards
 ### Blue_guy
